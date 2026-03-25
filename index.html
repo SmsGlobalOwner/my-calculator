@@ -20,16 +20,19 @@
         .result-box { background: #f8f9fa; padding: 20px; margin-top: 25px; border-radius: 12px; text-align: center; border: 1px dashed #cbd5e0; }
         .result-label { font-size: 14px; color: #64748b; text-transform: uppercase; letter-spacing: 1px; }
         .amount { font-size: 32px; font-weight: 800; color: var(--secondary); margin-top: 5px; }
-        /* MONEY ZONE - For Ads and Affiliate Links later */
-        .money-zone { width: 100%; max-width: 420px; margin-top: 20px; padding: 15px; background: #fff3cd; border-radius: 10px; text-align: center; border: 1px solid #ffeeba; font-size: 13px; color: #856404; }
-        .trust-badge { margin-top: 15px; font-size: 12px; color: #94a3b8; }
+        
+        /* THE MONEY BUTTON */
+        .checklist-btn { margin-top: 25px; display: block; background-color: #2980b9; color: white; padding: 15px 20px; text-decoration: none; border-radius: 10px; font-weight: bold; font-size: 16px; text-align: center; animation: pulse 2s infinite; }
+        @keyframes pulse { 0% { transform: scale(1); } 50% { transform: scale(1.03); box-shadow: 0 0 15px rgba(41, 128, 185, 0.4); } 100% { transform: scale(1); } }
+        
+        .trust-badge { margin-top: 15px; font-size: 12px; color: #94a3b8; text-align: center; }
     </style>
 </head>
 <body>
 
     <div class="header">
         <h1>USA Mortgage Calculator 2026</h1>
-        <p>Official tool for home buyers in the United States.</p>
+        <p>Official tool for 2026 homebuyers in Texas, Florida, and across the USA.</p>
     </div>
 
     <div class="calc-card">
@@ -38,28 +41,25 @@
             <input type="number" id="amount" value="350000">
         </div>
         <div class="input-group">
-            <label>Interest Rate (%)</label>
-            <input type="number" id="rate" value="6.8" step="0.1">
+            <label>Interest Rate (%) - 2026 Target</label>
+            <input type="number" id="rate" value="6.2" step="0.1">
         </div>
         <div class="input-group">
             <label>Loan Term (Years)</label>
             <input type="number" id="years" value="30">
         </div>
         
-        <button onclick="calculate()">Calculate Monthly Payment</button>
+        <button onclick="calculate()">Calculate My 2026 Payment</button>
 
         <div class="result-box">
             <div class="result-label">Estimated Monthly Payment</div>
-            <div id="payment" class="amount">$2,281.93</div>
+            <div id="payment" class="amount">$2,142.66</div>
         </div>
 
-        <div class="trust-badge">✔ 100% Secure & Anonymous | 2026 Update</div>
-    </div>
+        <!-- THIS IS THE 1,000$/DAY BUTTON -->
+        <a href="https://smsglobalowner.github.io/my-calculator/" class="checklist-btn">🎁 GET FREE 2026 READINESS CHECKLIST</a>
 
-    <!-- This is where we will put your $100/day Affiliate Link soon -->
-    <div class="money-zone" id="affiliate-area">
-        <strong>Special Offer:</strong> Looking for lower 2026 rates? 
-        <br>Compare top USA lenders and save up to $200/month.
+        <div class="trust-badge">✔ 100% Secure & Anonymous | 2026 Professional Update</div>
     </div>
 
     <script>
